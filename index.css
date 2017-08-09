@@ -1,16 +1,12 @@
-.ContentHeader{
-    z-index: 999;
-    float: left;
-    width: 100%;
-    height: 55px;
-    background: #780000;
-    position: fixed;
-    top: 0;
+.bd-Padrao{
+  	margin: 0px;
+		padding: 0px;
+		border: 0px;
+		background: #ffb3b3;
+		overflow-x: hidden;
+		font-family: Arial;
 }
-.LinkHeader{
-	color: #000;
-	text-decoration: none;
-    text-decoration-color: -moz-use-text-color;
-    text-decoration-line: none;
-    text-decoration-style: solid;
+
+@media screen and (min-width: 1025px){
+	background: #FFFAFA
 }

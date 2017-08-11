@@ -11,11 +11,13 @@
 	<!-- <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.html" /> -->
 	<!-- <link rel="stylesheet" type="text/css" href="css/jquery-filestyle.css" /> -->
 	<!-- <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.html" /> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="Header/hdr-Principal.css" />
 	<link rel="stylesheet" type="text/css" href="Body/bd-Principal.css" />
+	<link rel="stylesheet" type="text/css" href="Navbar/nav-Principal.css" />
+	<link rel="stylesheet" type="text/css" href="Footer/ftr-principal.css" />
 	<!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
 	<!-- <link rel="shortcut icon" href="img/icon.png" type="image/x-icon"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="css/menu.css"> -->
@@ -23,11 +25,11 @@
 	<!-- <link rel="stylesheet" type="text/css" href="css/socialIcons.css" /> -->
 
 
-	<!-- <script src="js/jquery.js"></script> -->
+	<script src="js/jquery.js"></script>
 	<!-- <script src="js/jasny-bootstrap.js"></script> -->
-	<!-- <script src="js/bootstrap.min.js"></script> -->
-	<!-- <script src="js/jquery-filestyle.js"></script> -->
-	<!-- <script src="js/modernizr.custom.js"></script> -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-filestyle.js"></script>
+	<script src="js/modernizr.custom.js"></script>
 
 
 </head>
@@ -47,15 +49,15 @@
 
 	</header>
 
-	<nav id="ContentMenu601x768">
-		<h1 class="Menu">
-				MENU
+	<nav class="nav-Menu_Dropdown">
+		<h1 class="nav-Title_Dropdown">
+				Menu
 				<span class="fa fa-chevron-circle-down"></span>
-			</h1>
+		</h1>
 
-		<div id="Menu601x768">
+		<div class="nav-Menu_Dropdown-Content">
 
-			<ul class="ContentAllMenu601x768">
+			<ul class="nav-UnorderedList">
 				<li class="LinkInstitucional">
 					<span class="Divisor"></span>
 					Institucional
@@ -529,19 +531,20 @@
 			var class1 = "fa-chevron-circle-down";
 			var class2 = "fa-chevron-circle-up";
 
-			$('.Menu').click(function() {
-				$(".ContentAllMenu601x768").slideToggle();
+			$('.nav-Menu_Dropdown').click(
+				function() {
+				$(".nav-Menu_Dropdown-Content").slideToggle();
 
 				//ESTE IF ALTERA O ICONE CONFORME O MENU ESTÁ FECHADO OU ABERTO
-				if ($("#ContentMenu601x768 h1 span").hasClass(class1)) {
+				if ($(".nav-Menu_Dropdown h1 span").hasClass(class1)) {
 
-					$("#ContentMenu601x768 h1 span").removeClass(class1);
-					$("#ContentMenu601x768 h1 span").addClass(class2);
+					$(".nav-Menu_Dropdown h1 span").removeClass(class1);
+					$(".nav-Menu_Dropdown h1 span").addClass(class2);
 
 				} else {
 
-					$("#ContentMenu601x768 h1 span").removeClass(class2);
-					$("#ContentMenu601x768 h1 span").addClass(class1);
+					$(".nav-Menu_Dropdown h1 span").removeClass(class2);
+					$(".nav-Menu_Dropdown h1 span").addClass(class1);
 
 				}
 
@@ -941,7 +944,7 @@
 		</div>
 	</div>
 
-	<footer>
+	<footer class="ftr-Content">
 
 		<div id="ContentCPS">
 
